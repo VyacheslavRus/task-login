@@ -18,6 +18,7 @@
     "react-scripts": "4.0.3",
     "react-loader-spinner": "^4.0.0",
     "redux": "^4.1.2",
+    "react-toastify": "^7.0.4",
     "redux-devtools-extension": "^2.13.9",
     "redux-persist": "^6.0.0",
     "tailwind": "^4.0.0",
@@ -28,7 +29,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "netlify deploy -p "
   },
   "eslintConfig": {
     "extends": [

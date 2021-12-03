@@ -1,6 +1,8 @@
 import React, { lazy, Suspense } from "react";
 import Loader from "react-loader-spinner";
 import { Switch } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import PrivatRoute from "./routes/PrivatRoute";
 import PublicRoute from "./routes/PublicRoute";
@@ -22,6 +24,7 @@ function App() {
           />
         }
       >
+        <ToastContainer autoClose={3000} />
         <Switch>
           <PublicRoute
             exact
