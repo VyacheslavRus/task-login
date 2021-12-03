@@ -11,10 +11,9 @@ let schema = yup.object().shape({
   email: yup.string().email().required(),
   password: yup
     .string()
-    .required("введите правильный пароль")
-    .min(5, "min-5")
-    .max(12, "max-12"),
-  // .matches(/^(?=.*[0-9a-zA-Z!@#$%^&*]{6,})$/, "чушь"),
+    .required("Insert PASSWORD")
+    .min(5, "It should be more than 5 symbols")
+    .max(12, "It should be more than 12 symbols"),
 });
 
 export default schema;
