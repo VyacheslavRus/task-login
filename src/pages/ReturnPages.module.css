@@ -4,16 +4,31 @@
 }
 
 .btn {
-  font-size: xx-large;
+  font-size: x-large;
   font-weight: 700;
-  width: 500px;
-  height: 150px;
+  width: 90%;
+  height: 100px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: lightgrey;
+  background-color: grey;
   border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    font-size: xx-large;
+    font-weight: 700;
+    max-width: 500px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightgrey;
+    border-radius: 5px;
+  }
 }
 
 .btn:hover {
